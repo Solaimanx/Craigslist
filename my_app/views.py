@@ -39,7 +39,7 @@ def new_search(request):
 
         if post.find(class_='result-image').get('data-ids'):
             post_image = post.find(class_='result-image').get('data-ids').split(',')[0].split(':')[1]
-            print(post_image)
+
         else:
             post_src = "https://img.republicworld.com/republic-prod/stories/promolarge/xxhdpi/c20gqydyxbbt0jo0_1593062345.jpeg?tr=w-758,h-433"
         
@@ -56,6 +56,8 @@ def new_search(request):
     stuff_for_frontend = {
         'search': search,
         'final_postings': final_postings,
+        
+
    
     }
     return render(request,'my_app/new_search.html', stuff_for_frontend)
