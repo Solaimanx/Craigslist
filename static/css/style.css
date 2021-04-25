@@ -1,3 +1,13 @@
 .search-form{
    text-align: center;
 }
+
+.card{
+   height:400px;
+   overflow:hidden;
+}
+
+.card-image{
+   height:250px;
+   overflow: hidden;
+}
